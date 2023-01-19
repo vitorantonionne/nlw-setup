@@ -14,13 +14,19 @@ body {
     color: #FFFFFF;
 }
 
+header {
+    position: fixed;
+    background-color: #09090A;
+
+    width: 100vw;
+}
+
 #title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 100vw;
 
-    padding: 48px;
+    padding: 48px ;
 }
 
 .clickbut {
@@ -47,10 +53,11 @@ body {
     display: flex;
     gap: 32px;
 
-    padding: 0 48px;
+    padding: 184px 48px 48px;
+    width: fit-content;
 }
 
-.emojis {
+.habits {
    display: flex;
    flex-direction: column;
    gap: 24px;
@@ -58,7 +65,7 @@ body {
    margin-top: 50px;
 }
 
-.emoji {
+.habit {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,6 +107,11 @@ input {
 
 input:checked {
     background: #8B5CF6;
-    border: 2px solid #A78BFA;
+    border: 2px solid #A78BFA;  
 }
 
+@media  (max-width: 760px) {
+    .clickbut p {
+        display: none;
+    }
+}
