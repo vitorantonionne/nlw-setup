@@ -6,7 +6,17 @@ const button = document.querySelector('.clickbut')
 button.addEventListener('click', add)
 
 function add() {
-    alert('ola mundo')
+    const today = '01-01'
+
+    const dayExists = nlwSetup.dayExists(today)
+
+    if(dayExists) {
+        alert('data já inclusa')
+        return
+    }
+
+    alert('Data adiconada com sucesso')
+    nlwSetup.addDay(todayz)
 }
 
 
